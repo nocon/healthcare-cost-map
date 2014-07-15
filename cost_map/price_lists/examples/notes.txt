@@ -1,0 +1,8 @@
+108 has two invalid fields, otherwise it would be 110:
+RADIOLOGY EXAM FOREARM  
+RADIOLOGY EXAM LUMBOSACRAL   
+
+51 has 3 that are hard to detect (total 54):
+oznaczenie glukozy-paskowe
+pomiar RR
+usuwanie ciała obcego
