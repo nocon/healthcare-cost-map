@@ -8,7 +8,8 @@ import decimal
 
 
 class PriceFinder:
-    version = 4
+    score_version = 4
+    search_version = 5
     from_translations = [u"from", u"от", u"od"]
     to_translations = [u"to", u"до", u"do"]
     date_translations = [u"year", u"roku", u"года"]
@@ -81,7 +82,6 @@ class PriceFinder:
                 elif len(remove_format_characters(tag.text)) > 0:
                     #print repr(tag.text)
                     previous_tag = tag
-        print 'Found: ' + str(len(prices)) + ' prices'
         return prices
 
     def is_a_special_code(self, text):

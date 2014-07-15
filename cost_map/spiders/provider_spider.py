@@ -60,6 +60,8 @@ class ProviderSpider(CrawlSpider):
             + ' and found ' + str(len(self.pages)) + ' pages'
         if len(self.pages) > 0:
             # wipe or archive old pages and their contents
+            # TODO instead of wiping add to existing. Only remove if no
+            # longer there?
             delete = Page.delete().where(Page.provider == self.provider)
             delete.execute()
             self.provider.last_crawled_by = self.version

@@ -26,7 +26,7 @@ class SpiderNest():
         for provider in Provider.select().where(
                 (Provider.language == 'pl') &
                 (Provider.last_crawled_by < ProviderSpider.version) &
-                (Provider.do_not_crawl == 0)).limit(10):
+                (Provider.do_not_crawl == 0)).limit(20):
             self.count += 1
             spider = ProviderSpider(provider=provider)
             settings = get_project_settings()
