@@ -1,0 +1,7 @@
+1) Create services whos names that are marked as positive by humans
+2) Translate services to various languages
+3) Prepare second match algorithm, for day-to-day matching
+4) Prepare address finding / geolocating algorithm
+5) Prepare data finalizer
+6) Build front-end
+7) Build manual tool
